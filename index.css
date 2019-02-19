@@ -1,0 +1,142 @@
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
+.js-clock {
+  background: transparent;
+}
+.js-title {
+  font-size: 10rem;
+}
+.js-gretting {
+  font-size: 2rem;
+}
+.js-form,
+.gretting {
+  display: none;
+}
+.js-form input[type="text"] {
+  padding: 1rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  box-sizing: border-box;
+  color: #fff;
+}
+.showing {
+  display: block;
+}
+.toDoContainer {
+  width: 60vw;
+  height: 400px;
+  border: 1px solid #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.js-toDoForm {
+  display: block;
+  width: 100%;
+  background: transparent;
+  opacity: 0.8;
+  border: none;
+}
+.js-toDoForm input[type="text"] {
+  width: 100%;
+  background: transparent;
+  outline-style: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+.js-toDoList {
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+.js-toDoList li {
+  width: 100%;
+  font-size: 1.5rem;
+  border-left: 4px solid #fff;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.js-toDoList li button {
+  background: transparent;
+  border: none;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  animation: fadeIn 2s linear;
+}
+.js-weather {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 0 1rem;
+}
