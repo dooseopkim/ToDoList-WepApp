@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/web,windows,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=web,windows,visualstudiocode
-/images
+/WebContent/resources/images
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json

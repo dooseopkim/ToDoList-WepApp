@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const IMG_DIR = "./images/";
+const IMG_DIR = ".resouces/images/";
 const IMG_EXT = ".jpg";
 const IMG_NUMBER = 5;
 function randomNumber() {
