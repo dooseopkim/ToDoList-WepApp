@@ -15,7 +15,6 @@ function deleteToDo(event) {
   toDos = cleanToDos;
   saveToDos();
 }
-function modifyToDo(event) {}
 function saveToDos() {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
@@ -23,13 +22,10 @@ function saveToDos() {
 function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
-  const modifyBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
   delBtn.innerHTML = "❌";
   delBtn.addEventListener("click", deleteToDo);
-  modifyBtn.innerHTML = "✏️";
-  modifyBtn.addEventListener("click", modifyToDo);
   span.innerText = text;
   li.appendChild(span);
   li.appendChild(delBtn);
