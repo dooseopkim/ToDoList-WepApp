@@ -1,6 +1,6 @@
 const weatherContainer = document.querySelector(".js-weather");
 const COORDS = "coords";
-const API_KEY = "openweathermap_API_KEY";
+const API_KEY = "453a884a4516414c6dc284aebb328551";
 
 function getWeather(lat, lng) {
   fetch(
@@ -32,6 +32,15 @@ function handleGeoSuccess(position) {
 }
 
 function handleGeoError() {
+  const latitude = "37.551099";
+  const longitude = "126.981597";
+  const coordsObj = {
+    latitude,
+    longitude
+  };
+  saveCoords(coordsObj);
+  getWeather(latitude, longitude);
+
   console.log("Sorry, can't access your geolocation");
 }
 

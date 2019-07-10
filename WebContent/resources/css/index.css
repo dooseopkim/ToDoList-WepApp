@@ -100,7 +100,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.8); */
   z-index: -1;
 }
 ::-webkit-scrollbar {
@@ -139,4 +139,12 @@ h1 {
   color: #fff;
   margin: 0;
   padding: 0 1rem;
+}
+.js-photographer {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
 }
