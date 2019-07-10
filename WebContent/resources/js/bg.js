@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const imgPhotographer = document.querySelector(".js-photographer");
 const UNSPLASH_URL =
-  "https://api.unsplash.com/photos/random?client_id=27c53db628dedda5828a5079600a6a82f35c49fc153d18c66e50b3be80c2e62c&query=nature&orientation=landscape";
+  "https://api.unsplash.com/photos/random?client_id=<Your API Access key>&query=nature&orientation=landscape";
 
 // Check OK -> Drawing
 // Check NO -> Get Image -> Save Image
